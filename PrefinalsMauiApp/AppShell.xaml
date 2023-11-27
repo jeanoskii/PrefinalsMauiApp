@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="PrefinalsMauiApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:PrefinalsMauiApp"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <Tab Title="Home">
+            <ShellContent
+                    Title="Home"
+                    ContentTemplate="{DataTemplate local:MainPage}"
+                    Route="MainPage" />
+        </Tab>
+        <Tab Title="Dogs">
+            <ShellContent
+                Title="Dogs"
+                ContentTemplate="{DataTemplate local:Dogs}"
+                Route="Dogs"/>
+        </Tab>
+
+        <Tab Title="Cats">
+            <ShellContent
+                Title="Cats"
+                ContentTemplate="{DataTemplate local:Cats}"
+                Route="Cats"/>
+        </Tab>
+
+        <Tab Title="Bored">
+            <ShellContent
+                Title="Bored"
+                ContentTemplate="{DataTemplate local:Bored}"
+                Route="Bored"/>
+        </Tab>
+    </TabBar>
+    <!--<FlyoutItem Title="Home">
+        <Tab Title="Home">
+            <ShellContent
+                    Title="Home"
+                    ContentTemplate="{DataTemplate local:MainPage}"
+                    Route="MainPage" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Login">
+        <Tab Title="Login">
+            <ShellContent
+                Title="Login"
+                ContentTemplate="{DataTemplate local:Login}"
+                Route="Login" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem
+        Title="About us"
+        >
+        <Tab Title="About us">
+            <ShellContent
+                Title="About us"
+                ContentTemplate ="{DataTemplate local:AboutUs}"
+                Route="AboutUs"
+                />
+        </Tab>
+    </FlyoutItem>-->
+    
+    
+    <!--<FlyoutItem Title="Home">
+        <Tab>
+            <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="About Us">
+
+        <Tab>
+            <ShellContent
+            Title="About Us"
+            ContentTemplate="{DataTemplate local:AboutUs}"
+            Route="AboutUs" />
+        </Tab>
+    </FlyoutItem>-->
+
+    <!--<TabBar>
+        <Tab Title="Home">
+            <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+        </Tab>
+        <Tab Title="About Us">
+            <ShellContent
+            Title="About Us"
+            ContentTemplate="{DataTemplate local:AboutUs}"
+            Route="AboutUs" />
+        </Tab>
+    </TabBar>-->
+    
+</Shell>
